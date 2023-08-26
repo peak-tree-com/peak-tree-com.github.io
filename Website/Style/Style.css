@@ -5,6 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 }
 
 :root{
@@ -51,14 +52,14 @@ a{
 }
 .heading span{
     background: linear-gradient(116deg, #67EDD6 10%, #33CC34 100%);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .dark-heading span{
     background: linear-gradient(116deg, #67EDD6 10%, #33CC34 100%);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .dark-paragraph{
@@ -150,8 +151,8 @@ a{
 }
 .navigation .nav-logo a span{
     background: linear-gradient(116deg, #67EDD6 0%, #33CC34 100%);
-    background-clip: text;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .navigation .nav-elements{
@@ -227,7 +228,7 @@ a{
         z-index: 100000000;
         background-color: var(--dark-bg);
         top: 0;
-        left: 0;
+        left: -100%;
         align-items: center;
         justify-content: center;
         transition: 0.3s;
@@ -304,7 +305,7 @@ a{
     align-items: center;
     justify-content: space-between;
     gap: 30px;
-    border-bottom-right-radius: 150px;
+    border-bottom-right-radius: 200px;
     position: relative;
     overflow: hidden;
     z-index: 0;
@@ -471,7 +472,7 @@ a{
 .services-section{
     min-height: 100vh;
     width: 100%;
-    padding: 5rem 6%;
+    padding: 4.5rem 6%;
     background-color: var(--white);
     display: flex;
     align-items: center;
