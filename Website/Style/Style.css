@@ -82,6 +82,59 @@ a{
     padding-top: 12px;
 }
 
+/** Common things Responsiveness **/
+@media only screen and (max-width: 530px){
+    .dark-heading{
+        font-size: 3rem;
+    }
+    .dark-paragraph{
+        font-size: 16px;
+    }
+    .heading{
+        font-size: 3rem;
+    }
+    .paragraph{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .dark-heading{
+        font-size: 2.5rem;
+    }
+    .dark-paragraph{
+        font-size: 15px;
+    }
+    .heading{
+        font-size: 2.5rem;
+    }
+    .paragraph{
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .dark-heading{
+        font-size: 2rem;
+    }
+    .dark-paragraph{
+        font-size: 14px;
+    }
+    .heading{
+        font-size: 2rem;
+    }
+    .paragraph{
+        font-size: 14px;
+    }
+    .paragraph-small{
+        font-size: 12px;
+    }
+    .heading-small{
+        font-size: 1.5rem;
+    }
+}
+
+
+
+
 /** Navigation Section **/
 
 .navigation{
@@ -359,8 +412,56 @@ a{
     }
     .hero-section .hero-right{
         justify-content: center;
+        margin-bottom: 50px;
     }
 }
+@media only screen and (max-width: 530px){
+    .hero-section .hero-right .hero-right-video, .hero-section .hero-right .hero-right-video img{
+        transform: scale(0.85);
+    }
+}
+@media only screen and (max-width: 500px){
+    .hero-section .hero-right .hero-right-video{
+        height: 425px;
+        width: 425px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .hero-section .hero-right .hero-right-video{
+        height: 380px;
+        width: 380px;
+    }
+
+}
+@media only screen and (max-width: 420px){
+    .hero-section .hero-left .hero-cta{
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+    .hero-section .hero-left .hero-cta .cta-1 a, .hero-section .hero-left .hero-cta .cta-2 a{
+        padding: 10px 45px;
+    }
+}
+@media only screen and (max-width: 380px){
+    .hero-section .hero-right .hero-right-video{
+        height: 320px;
+        width: 320px;
+    }
+}
+@media only screen and (max-width: 330px){
+    .hero-section .hero-right .hero-right-video{
+        height: 280px;
+        width: 280px;
+    }
+}
+@media only screen and (max-width: 290px){
+    .hero-section .hero-right .hero-right-video{
+        height: 250px;
+        width: 250px;
+    }
+}
+
+
 
 
 
