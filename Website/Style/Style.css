@@ -83,13 +83,13 @@ a{
 }
 
 /** Navigation Section **/
+
 .navigation{
     padding: 2% 6%;
     background-color: var(--dark-bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    z-index: 10;
 }
 .navigation .nav-logo a{
     font-size: 20px;
@@ -164,12 +164,67 @@ a{
         cursor:pointer;
     }
     .responsive-nav-elements{
-        position: absolute;
+        position: fixed;
         height: 100%;
         width: 100%;
-        display: block;
-        z-index: 10000;
+        display: flex;
+        z-index: 100000000;
         background-color: var(--dark-bg);
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-btn{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    .nav-btn i{
+        font-size: 26px;
+        color: var(--white);
+    }
+    .responsive-nav-elements .nav-elements{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        height: 70%;
+    }
+    .responsive-nav-elements .nav-elements .nav-links{
+        font-size: 14px;
+        font-weight: 400;
+        color: var(--dark-light);
+    }
+    .responsive-nav-elements .nav-elements .nav-links::after{
+        content: "";
+        height: 2px;
+        display: block;
+        width: 0%;
+        background-color: var(--primary-color);
+        transition: 0.3s;
+        border-radius: 20px;
+    }
+    .responsive-nav-elements .nav-elements .nav-links:hover{
+        color: var(--primary-color);
+    }
+    .responsive-nav-elements .nav-elements .nav-links:hover::after{
+        width: 100%;
+        transition: 0.3s;
+    }
+    .responsive-nav-elements .nav-elements .nav-cta a{
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px 40px;
+        border: 1px solid var(--primary-color);
+        color: var(--primary-color);
+        border-radius: 50px;
+        transition: 0.3s;
+    }
+    .responsive-nav-elements .nav-elements .nav-cta a:hover{
+        background-color: var(--primary-color);
+        color: var(--white);
+        transition: 0.3s
     }
 }
 
