@@ -152,6 +152,9 @@ a{
 
 /** Navigation Section Responsiveness **/
 @media only screen and (max-width: 950px) {
+    .navigation{
+        padding: 15px 6%;
+    }
     .navigation .nav-elements{
         display: none;
     }
@@ -174,11 +177,12 @@ a{
         left: 0;
         align-items: center;
         justify-content: center;
+        transition: 0.3s;
     }
     .nav-btn{
         position: absolute;
-        top: 30px;
-        right: 30px;
+        top: 50px;
+        right: 50px;
     }
     .nav-btn i{
         font-size: 26px;
@@ -241,7 +245,7 @@ a{
     background-color: var(--dark-bg);
     padding-right: 6%;
     padding-left: 6%;
-    margin-top: -18px;
+    margin-top: -15px;
     padding-bottom: 30px;
     display: flex;
     align-items: center;
