@@ -136,8 +136,24 @@ a{
 
 
 
-/** Navigation Section **/
+/* Navigation reveal on scroll style */
+/* .scroll-down .main .navii{
+    transform: translate(0, -100%, 0);
+}
+.scroll-up .main .navii{
 
+} */
+
+
+
+/** Navigation Section **/
+/* .navii{
+    position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    z-index: 100;
+} */
 .navigation{
     padding: 2% 6%;
     background-color: var(--dark-bg);
@@ -619,4 +635,20 @@ a{
     .about-section .about-left, .about-section .about-right{
         flex: 1;
     }
+}
+
+
+
+
+
+/** Projects Section **/
+.project-section{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2% 6%;
+    background-color: var(--white);
+}
+.project-section .project-header{
+    text-align: center;
+    margin-top: 30px;
 }
