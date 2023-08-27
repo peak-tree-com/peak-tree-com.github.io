@@ -565,3 +565,44 @@ a{
         flex-wrap: wrap;
     }
 }
+
+
+
+
+
+
+/** About Section **/
+.about-section{
+    min-height: 100vh;
+    width: 100%;
+    padding: 2% 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: var(--dark-bg);
+}
+.about-section .about-left{
+    flex: 0.6;
+}
+.about-section .about-right{
+    flex: 0.5;
+}
+.about-section .about-right .about-right-img img{
+    width: 100%;
+}
+.about-section .about-left .about-cta a{
+    font-size: 14px;
+    font-weight: 500;
+    padding: 12px 45px;
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 50px;
+    transition: 0.3s
+}
+.about-section .about-left .about-cta a:hover{
+    letter-spacing: 2px;
+    box-shadow: 0px 5px 25px rgb(51, 204, 52, 0.7);
+    transition: 0.3s
+}
