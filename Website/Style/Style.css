@@ -223,12 +223,12 @@ a{
     .responsive-nav-elements{
         position: fixed;
         height: 100%;
-        width: 100%;
+        width: 80%;
         display: flex;
         z-index: 100000000;
         background-color: var(--dark-bg);
         top: 0;
-        left: -100%;
+        left: -80%;
         align-items: center;
         justify-content: center;
         transition: 0.3s;

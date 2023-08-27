@@ -4,7 +4,7 @@ function showMenu() {
     Nav.style.left = "0";
 }
 function hideMenu() {
-    Nav.style.left = "-100%";
+    Nav.style.left = "-80%";
 }
 
 // const scroll = new LocomotiveScroll({
