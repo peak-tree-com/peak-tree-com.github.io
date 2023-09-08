@@ -147,19 +147,17 @@ a{
 
 
 /** Navigation Section **/
-/* .navii{
-    position: fixed;
-	top: 0;
-	left: 0;
-    width: 100%;
-    z-index: 100;
-} */
 .navigation{
     padding: 2% 6%;
     background-color: var(--dark-bg);
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+	top: 0;
+	left: 0;
+    width: 100%;
+    z-index: 100;
 }
 .navigation .nav-logo a{
     font-size: 20px;
@@ -306,17 +304,14 @@ a{
 
 
 
-
 /** Hero Section **/
 
 .hero-section{
     min-height: 100vh;
     width: 100%;
+    margin: 70px 0px;
+    padding: 30px 6% 50px 6%;
     background-color: var(--dark-bg);
-    padding-right: 6%;
-    padding-left: 6%;
-    margin-top: -15px;
-    padding-bottom: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -419,7 +414,7 @@ a{
     .hero-section{
         flex-wrap: wrap;
         margin-top: -1px;
-        gap: 80px;
+        gap: 40px;
     }
     .hero-section .hero-left, .hero-section .hero-right{
         width: 100%;
@@ -488,7 +483,8 @@ a{
 .services-section{
     min-height: 100vh;
     width: 100%;
-    padding: 4.5rem 6%;
+    padding: 6%;
+    margin: 10px 0px;
     background-color: var(--white);
     display: flex;
     align-items: center;
@@ -546,7 +542,7 @@ a{
     transition: 1s;
 }
 .services-section .services-right .services:hover .paragraph-small{
-    color: #eee;
+    color: #4e4e4e;
 }
 .services-section .services-right .services .services-img{
     margin-bottom: 15px;
@@ -586,12 +582,12 @@ a{
 
 
 
-
 /** About Section **/
 .about-section{
     min-height: 100vh;
     width: 100%;
-    padding: 2% 6%;
+    padding: 6% 6%;
+    margin-top: 80px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -628,8 +624,6 @@ a{
     border-radius: 50%;
     margin: auto;
 }
-
-
 .about-section .about-left{
     flex: 0.6;
     z-index: 10;
@@ -669,20 +663,4 @@ a{
     .about-section .about-left, .about-section .about-right{
         flex: 1;
     }
-}
-
-
-
-
-
-/** Projects Section **/
-.project-section{
-    min-height: 100vh;
-    width: 100%;
-    padding: 2% 6%;
-    background-color: var(--white);
-}
-.project-section .project-header{
-    text-align: center;
-    margin-top: 30px;
 }
